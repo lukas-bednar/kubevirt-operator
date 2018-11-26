@@ -1,3 +1,3 @@
 package kubevirt
 
-var LatestKubevirtVersion = "v0.9.0-alpha.0"
+var LatestKubevirtVersion = "v0.9.6"
