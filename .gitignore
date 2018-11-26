@@ -3,6 +3,8 @@
 tmp/_output
 tmp/_test
 
+# Binaries
+kubevirt-operator
 
 # Created by https://www.gitignore.io/api/go,vim,emacs,visualstudiocode
 
