@@ -7,8 +7,8 @@ GOLANG_FILES:=$(shell find . -name \*.go -print)
 pkgs = $(shell go list ./... | grep -v /vendor/ )
 
 dep:
+	go get -u github.com/golang/dep/cmd/dep
 	dep ensure -v
-	wget -O kubevirt.yaml https://github.com/kubevirt/kubevirt/releases/download/v0.6.4/kubevirt.yaml
 
 all: format dep compile build deploy
 
